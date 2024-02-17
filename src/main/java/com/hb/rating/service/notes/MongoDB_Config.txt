@@ -8,22 +8,10 @@ MongoDB Compass ---- GUI interface tool for the MongoDB
 mongodb://localhost:27017
 
 
-
-
 brew tap mongodb/brew
 
 
-
-
-
 brew install mongodb-community@5.0
-
-
-
-
-
-
-
 
 
 
@@ -38,21 +26,13 @@ brew install mongodb-community@5.0
 
 
 
-
-
 brew install mongodb/brew/mongodb-community@5.0
-
-
 
 
 brew services start mongodb-community@5.0
 
 
-
 brew services stop mongodb-community@5.0
-
-
-
 
 
 
@@ -73,7 +53,6 @@ mongo --version
 
 
 
-
 mongod --config /opt/homebrew/etc/mongod.conf --fork
 
 
@@ -84,19 +63,15 @@ show dbs
 
 
 
-
-
 Install home brew and Mongo DB (very helpful, used this link)
 
 https://www.youtube.com/watch?v=s1WQ0eEpqqg
 
 
 
-
 Install Home brew
 
 https://www.youtube.com/watch?v=SOjSNB7F2m4
-
 
 
 
@@ -111,9 +86,7 @@ https://www.youtube.com/watch?v=plG_BnAAoPo
 
 
 
-
 https://www.knowledgehut.com/blog/web-development/install-mongodb-mac
-
 
 
 
@@ -123,15 +96,12 @@ Type ‘exit’ to exit mongosh
 
 
 
-
 1. Open a command prompt or terminal window.
 2. Type the command mongod and hit enter.
 3. If MongoDB is running, you will see a message similar to the following: bash  Copy code{"t":{"$date":"2023-03-10T15:23:50.831+00:00"},"s":"I", "c":"NETWORK", "id":23016, "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}    This message indicates that MongoDB is listening for incoming connections on port 27017.
 
 
-
 OR
-
 
 Alternatively, you can also use the mongo command-line tool to check if MongoDB is running:
 1. Open a command prompt or terminal window.
@@ -170,19 +140,12 @@ Type ‘exit’ to exit the mongo command line
 
 
 
-
-
 To install mongodb-compass, run:
   brew install --cask mongodb-compass
-
 
 
 
 In MongoDB, id's are by default auto-generated
 
 And also we use @Document instead of using @Entity as in case of Jpa Repository
-
-
-
-
 
