@@ -1,151 +1,0 @@
-
-----------------------Mongo DB Configuration----------------------
-
-
-MongoDB Compass ---- GUI interface tool for the MongoDB
-
-
-mongodb://localhost:27017
-
-
-brew tap mongodb/brew
-
-
-brew install mongodb-community@5.0
-
-
-
-
-first install mongodb
-brew tap mongodb/brew
-
-
-
-Secondly install using this command. mangodb successfully installed
-brew install mongodb-community@5.0
-
-
-
-brew install mongodb/brew/mongodb-community@5.0
-
-
-brew services start mongodb-community@5.0
-
-
-brew services stop mongodb-community@5.0
-
-
-
-If you need to have mongodb-community@5.0 first in your PATH, run:
-  echo 'export PATH="/opt/homebrew/opt/mongodb-community@5.0/bin:$PATH"' >> ~/.zshrc
-
-
-
-source ~/.zshrc
-
-
-mongod --version
-
-OR
-
-mongo --version
-
-
-
-
-mongod --config /opt/homebrew/etc/mongod.conf --fork
-
-
-mongosh
-
-
-show dbs
-
-
-
-Install home brew and Mongo DB (very helpful, used this link)
-
-https://www.youtube.com/watch?v=s1WQ0eEpqqg
-
-
-
-Install Home brew
-
-https://www.youtube.com/watch?v=SOjSNB7F2m4
-
-
-
-
-Install MongoDB on Mac
-
-https://www.youtube.com/watch?v=4crXgQZG4W8
-
-
-https://www.youtube.com/watch?v=plG_BnAAoPo
-
-
-
-
-https://www.knowledgehut.com/blog/web-development/install-mongodb-mac
-
-
-
-
-Type ‘exit’ to exit mongosh
-
-
-
-
-1. Open a command prompt or terminal window.
-2. Type the command mongod and hit enter.
-3. If MongoDB is running, you will see a message similar to the following: bash  Copy code{"t":{"$date":"2023-03-10T15:23:50.831+00:00"},"s":"I", "c":"NETWORK", "id":23016, "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}    This message indicates that MongoDB is listening for incoming connections on port 27017.
-
-
-OR
-
-Alternatively, you can also use the mongo command-line tool to check if MongoDB is running:
-1. Open a command prompt or terminal window.
-2. Type the command mongo and hit enter.
-3. If MongoDB is running, you will see a message similar to the following: css  Copy codeMongoDB shell version v5.1.0 connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb Implicit session: session { "id" : UUID("2f7c85f1-76d6-40cf-b5e6-bf94c47dc319") } MongoDB server version: 5.1.0    This message indicates that you have successfully connected to a running MongoDB instance.
-
-
-
-—————————————
-
-
-The mongo command line tool is a client application that allows you to interact with a running MongoDB server. Here are the basic steps to use the mongo command line tool:
-
-1. Make sure that MongoDB is running on your system. You can check if MongoDB is running by typing the command mongod in a command prompt or terminal window.
-
-2. Open a new command prompt or terminal window.
-
-3. Type the command mongo and hit enter. This will start the mongo shell and connect to the default MongoDB server running on your local machine. If you want to connect to a different server, you can specify the hostname or IP address of the server as an argument to the mongo command. For example: javascript  mongo mongodb://hostname:port/   
-4. Once you are connected to the MongoDB server, you can start entering commands to interact with the server. Here are some examples of commands you can use:
-
-    * show databases - This command will list all the databases available on the server.
-    * use dbname - This command will switch to the specified database.
-    * show collections - This command will list all the collections in the current database.
-    * db.collection_name.find() - This command will return all the documents in the specified collection.
-    * db.collection_name.insertOne() - This command will insert a new document into the specified collection.
-    * db.collection_name.updateOne() - This command will update an existing document in the specified collection.
-    * db.collection_name.deleteOne() - This command will delete an existing document from the specified collection.
-
-
-5. You can find more information on the available commands in the MongoDB documentation.
-6. When you are finished using the mongo shell, you can type the command exit to close the shell and disconnect from the MongoDB server.
-
-
-
-Type ‘exit’ to exit the mongo command line
-
-
-
-To install mongodb-compass, run:
-  brew install --cask mongodb-compass
-
-
-
-In MongoDB, id's are by default auto-generated
-
-And also we use @Document instead of using @Entity as in case of Jpa Repository
-
